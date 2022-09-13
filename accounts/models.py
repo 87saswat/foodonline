@@ -98,5 +98,13 @@ class UserProfile(models.Model):
         return self.user.email
 
 
-    
+     
+
+#SIGNALS
+
+
+def post_save_create_profile_receiver(sender, instance, created, **kwargs):
+    pass
+
+
 
